@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+[class*="__container"]{
+    max-width: 1172px;
+    width: 100%;
+    margin:0 auto;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+// colors
+$Green: #27AE60;
+$Dark-color:#1F2B38;
+$Gold-dark:#BB8E34;
+$Gold-light:#F6C666;
+
+
+
+
