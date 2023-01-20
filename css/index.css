@@ -44,6 +44,7 @@ a {
 .header > * {
   display: flex;
   align-items: center;
+  transition: all 0.3s linear;
 }
 
 .header__left {
@@ -56,14 +57,16 @@ a {
 
 .header__list > * {
   background-color: #1F2B38;
-  padding: 14px 24px;
   color: #fff;
+  transition: all 0.3s linear;
 }
 
 .list__link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   color: #fff;
+  padding: 14px 24px;
 }
 
 .list__item:hover {
@@ -94,7 +97,7 @@ a {
   gap: 40px;
 }
 
-.header__inner {
+.header__inner__features {
   display: flex;
   gap: 35px;
 }
@@ -107,7 +110,23 @@ a {
 }
 
 .headers-ico {
+  color: #27AE60;
   margin-right: 10px;
+}
+
+.features__item {
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+
+.features__item:hover {
+  color: #27AE60;
+}
+
+.header__inner__features > * {
+  display: flex;
+  align-items: center;
 }
 
 .header__inner_right {
@@ -116,7 +135,19 @@ a {
   gap: 20px;
 }
 
+.header__inner_right_link a:hover {
+  color: #27AE60;
+  transition: all 0.3s linear;
+}
+
+.header__inner_right_link {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .header__inner_right a {
+  display: inline-block;
   color: #fff;
 }
 
@@ -129,21 +160,31 @@ a {
   width: 100%;
   padding: 24px;
   display: flex;
+  justify-content: space-between;
 }
 
 .sub__header__left {
-  width: 40%;
   display: flex;
   align-items: center;
 }
 
 .sub__header__left > * {
-  flex: 0 1 40%;
   display: flex;
   align-items: center;
   color: #fff;
   gap: 10px;
+}
+
+.sub__header__inner,
+.sub__header__email {
   border-right: 2px solid rgba(133, 127, 127, 0.3);
+  padding-right: 25px;
+}
+
+.sub__heeder__inner_right {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 24px;
 }
 
 .sub__header__left h3 {
@@ -155,4 +196,70 @@ a {
   letter-spacing: 1px;
   opacity: 0.4;
   text-transform: uppercase;
+}
+
+.sub__header__right > * {
+  display: flex;
+  align-items: center;
+}
+
+.sub__header__right {
+  display: flex;
+  gap: 32px;
+}
+
+.sub__header__tel {
+  gap: 15px;
+  color: #fff;
+}
+
+.sub__header__tel p:last-child {
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.5;
+}
+
+.sub__header__inner__right_contact {
+  line-height: 20px;
+}
+
+.sub__header_btn {
+  width: 7em;
+  padding: 10px 15px;
+  background-color: #27AE60;
+  border: none;
+  cursor: pointer;
+  line-height: 13px;
+}
+
+.default-btn {
+  border-radius: 6px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.sub__header__email {
+  display: flex;
+  gap: 15px;
+  color: #fff;
+}
+.sub__header__email p {
+  opacity: 0.5;
+}
+.sub__header__email a {
+  color: #fff;
+}
+
+.sub__header__purchase {
+  gap: 20px;
+  color: #fff;
+}
+
+.sub__header__inner__right_purchase p:first-child {
+  opacity: 0.5;
+}
+
+.fa-bag-shopping {
+  color: #27AE60;
+  font-size: 32px;
 }/*# sourceMappingURL=index.css.map */
