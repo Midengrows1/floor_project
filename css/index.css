@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 
-[class*=__container] {
+[class*=__wrapper] {
   max-width: 1172px;
   width: 100%;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -28,6 +29,7 @@ a {
 .first-screen {
   height: 100vh;
   width: 100%;
+  font-family: Roboto Condensed, sans-serif;
 }
 
 .first-screen-back {
@@ -274,7 +276,7 @@ a {
 
 .banner-screen {
   width: 1152px;
-  margin: 5em auto;
+  margin: 5em auto 0em;
   background-color: #1F2B38;
   font-family: Roboto Condensed, sans-serif;
 }
@@ -518,4 +520,138 @@ a {
   vertical-align: baseline;
   text-transform: uppercase;
   color: #fff;
+}
+
+.screen_cost {
+  width: 100%;
+}
+.screen_cost-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 30px 0;
+}
+.screen_cost-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.screen_cost-bottom .screen_cost-item:last-child {
+  border-right: none;
+}
+.screen_cost-item {
+  flex: 1 1 auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  text-align: center;
+  border-right: 2px solid rgba(133, 127, 127, 0.1);
+  border-bottom: 4px solid rgba(133, 127, 127, 0.1);
+}
+.screen_cost-item img {
+  justify-self: center;
+  margin: 10px 0;
+}
+
+.green-text {
+  color: #27AE60;
+}
+
+.second-screen {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/img/cozy-house.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.second-screen-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(269.52deg, #253342 -7.98%, rgba(37, 51, 66, 0) 35.54%), linear-gradient(90deg, #253342 -11.32%, rgba(37, 51, 66, 0) 30.49%), radial-gradient(101.43% 80.16% at 50% 43.71%, rgba(37, 51, 66, 0) 0%, #253342 73.88%);
+  z-index: -1;
+}
+.second-screen_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  padding: 150px 30px 0 30px;
+}
+.second-screen__wrapper {
+  width: 100%;
+  height: 75%;
+  background: url(/assets/img/back-dotted.png) no-repeat center;
+}
+
+.second-screen_top__wrapper {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 40px 0;
+  text-transform: uppercase;
+}
+
+.second-screen-item {
+  max-width: 25%;
+  height: 60.5%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.second-screen-item_title {
+  color: #F6C666;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.second-screen-item_container {
+  margin-top: 50px;
+  width: 70%;
+  height: 70%;
+  min-width: 174px;
+  background: rgba(34, 47, 60, 0.75);
+  border-radius: 0px 16px 16px 16px;
+  padding: 25px 10px 25px 25px;
+}
+.second-screen-item_inner {
+  min-height: 180px;
+  border-bottom: 2px solid rgba(133, 127, 127, 0.2);
+  color: #fff;
+  font-size: 14px;
+}
+
+.block-number {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px 16px 0px 16px;
+  border: 2px solid #BB8E34;
+  text-align: center;
+  color: #fff;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1F2B38;
+}
+
+.star-long {
+  position: absolute;
+  top: -6.5%;
+  left: 25%;
 }/*# sourceMappingURL=index.css.map */

@@ -1,10 +1,9 @@
 @import "_main.scss";
 
-
-
 .first-screen {
   height: 100vh;
   width: 100%;
+  font-family: Roboto Condensed, sans-serif;
 }
 
 .first-screen-back {
@@ -26,7 +25,7 @@
   left: 0;
 }
 
-.header>* {
+.header > * {
   display: flex;
   align-items: center;
   transition: all 0.3s linear;
@@ -40,7 +39,7 @@
   display: flex;
 }
 
-.header__list>* {
+.header__list > * {
   background-color: $Dark-color;
   color: #fff;
   transition: all 0.3s linear;
@@ -70,7 +69,7 @@
   margin-left: 10px;
 }
 
-.logo>* {
+.logo > * {
   display: inline-block;
   padding: 13px;
   color: $Green;
@@ -86,8 +85,6 @@
   display: flex;
   gap: 35px;
 }
-
-.header__inner {}
 
 .header__inner a {
   text-decoration: none;
@@ -111,7 +108,7 @@
   color: $Green;
 }
 
-.header__inner__features>* {
+.header__inner__features > * {
   display: flex;
   align-items: center;
 }
@@ -155,7 +152,7 @@
   align-items: center;
 }
 
-.sub__header__left>* {
+.sub__header__left > * {
   display: flex;
   align-items: center;
   color: #fff;
@@ -189,7 +186,7 @@
   }
 }
 
-.sub__header__right>* {
+.sub__header__right > * {
   display: flex;
   align-items: center;
 }
@@ -259,7 +256,7 @@
 
 .banner-screen {
   width: 1152px;
-  margin: 5em auto;
+  margin: 5em auto 0em;
   background-color: $Dark-color;
   font-family: Roboto Condensed, sans-serif;
 
@@ -280,7 +277,7 @@
     position: relative;
   }
 
-  &__list>* {
+  &__list > * {
     border-right: 1px solid rgba(207, 193, 193, 0.2);
   }
 
@@ -393,8 +390,6 @@
   color: $Green;
 }
 
-.banner-screen_main {}
-
 .banner-description {
   display: flex;
   background-color: $Green;
@@ -428,9 +423,11 @@
   left: -96%;
   z-index: 1;
   background: $Green;
-  background: linear-gradient(to right,
-      rgba(39, 174, 96, 0) 70.43%,
-      #27ae60 95.6%);
+  background: linear-gradient(
+    to right,
+    rgba(39, 174, 96, 0) 70.43%,
+    #27ae60 95.6%
+  );
 }
 
 .banner-varanity_cantainer {
@@ -444,9 +441,11 @@
 .banner-image {
   flex-basis: auto;
 
-  background: linear-gradient(180deg,
-      rgba(39, 174, 96, 0) 73.43%,
-      #27ae60 94.6%);
+  background: linear-gradient(
+    180deg,
+    rgba(39, 174, 96, 0) 73.43%,
+    #27ae60 94.6%
+  );
 
   img {
     height: 100%;
@@ -499,10 +498,10 @@
   align-items: cnter;
   padding: 24px;
   gap: 15px;
-  border-left:1px solid #000;
+  border-left: 1px solid #000;
 }
-.banner__bottom .banner-item__bottom:last-child{
-  border-right:1px solid #000;
+.banner__bottom .banner-item__bottom:last-child {
+  border-right: 1px solid #000;
 }
 .banner-item__left {
   img {
@@ -515,7 +514,7 @@
 }
 
 .banner-item__left::after {
-  content: '';
+  content: "";
   position: absolute;
   display: inline-block;
   width: 2px;
@@ -529,5 +528,151 @@
   vertical-align: baseline;
   text-transform: uppercase;
   color: #fff;
+}
+
+.screen_cost {
+  width: 100%;
+  &-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 30px 0;
+  }
+  &-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-bottom &-item:last-child {
+    border-right: none;
+  }
+  &-item {
+    flex: 1 1 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    text-align: center;
+    border-right: 2px solid rgba(133, 127, 127, 0.1);
+    border-bottom: 4px solid rgba(133, 127, 127, 0.1);
+    img {
+      justify-self: center;
+      margin: 10px 0;
+    }
+  }
+}
+.green-text {
+  color: $Green;
+}
+.second-screen {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/img/cozy-house.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        269.52deg,
+        #253342 -7.98%,
+        rgba(37, 51, 66, 0) 35.54%
+      ),
+      linear-gradient(90deg, #253342 -11.32%, rgba(37, 51, 66, 0) 30.49%),
+      radial-gradient(
+        101.43% 80.16% at 50% 43.71%,
+        rgba(37, 51, 66, 0) 0%,
+        #253342 73.88%
+      );
+    z-index: -1;
+  }
+  &_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items:flex-start;
+    padding: 150px 30px 0 30px;
+  }
+  &__wrapper {
+    width: 100%;
+    height: 75%;
+    background: url(/assets/img/back-dotted.png) no-repeat center;
+  }
+}
+.second-screen_top__wrapper {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 40px 0;
+  text-transform: uppercase;
+}
+.second-screen-item {
+  max-width: 25%;
+  height: 60.5%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  &_title {
+    color: $Gold-light;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &_container {
+    margin-top: 50px;
+    width:70%;
+    height: 70%;
+    min-width: 174px;
+    background: rgba(34, 47, 60, 0.75);
+    border-radius: 0px 16px 16px 16px;
+    padding: 25px 10px 25px 25px;
+  
+  }
+  &_inner {
+    min-height: 180px;
+    border-bottom: 2px solid rgba(133, 127, 127, 0.2);
+    color: #fff;
+    font-size: 14px;
+  }
+}
+.block-number {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px 16px 0px 16px;
+  border:2px solid $Gold-dark;
+  text-align: center;
+  color:#fff;
+  font-size: 27px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background-color:$Dark-color;
+}
+.star-long{
+  position: absolute;
+  top:-6.5%;
+  left: 25%;
 
 }
+// .second-screen-::before {
+//   content: url(/assets/img/long-star.png);
+//   display: inline-block;
+//   position: absolute;
+//   left: -10%;
+//   top: -5.5%;
+// }
